@@ -1,0 +1,39 @@
+.layout {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+                'header header  header header'
+                'article article nav ads'
+                'footer footer footer footer';
+
+}
+.layout > div {
+    background-color: green;
+    font-size: 40px;
+}
+#one {
+    grid-area: header;
+    width: 1050px;
+    height: 130px;
+
+}
+#two{
+    grid-area: article;
+
+}
+#three {
+    grid-area: nav;
+    grid-template-columns: 100px 1fr;
+
+}
+#four {
+    grid-area: ads;
+    width: 200px;
+    height: 240px;
+
+}
+#five {
+    grid-area: footer;
+    width: 1050px;
+    height: 130px;
+}
